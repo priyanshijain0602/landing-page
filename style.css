@@ -1,0 +1,124 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Header Section */
+    .hero {
+      background-image: url('bgg.webp'); /* Replace with your own */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      position: relative;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-content {
+      position: relative;
+      top: 40%;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: purple;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Menu Section */
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .menu, .services {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .menu h2, .services h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .menu-items, .service-items {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .menu-item, .service-item {
+      width: 250px;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .menu-item h3, .service-item h3 {
+      margin: 10px 0 5px;
+    }
+
+    .menu-item p, .service-item p {
+      font-size: 14px;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #66bb6a;
+      color: white;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu-items, .service-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
